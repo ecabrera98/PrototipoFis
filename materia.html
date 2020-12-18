@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes de Computadores</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <a href="index.html">
+        <div class="logo"> </div>
+    </a>
+    <div class="ventana"> </div>
+
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="universidad.html">Universidad</a></li>
+                <li ><a href="facultad.html">Facultad de Ingeniería en
+                        Sistemas</a></li>
+                <li id="seleccionadoLI"><a href="materia.html">Redes de Computadores</a></li>
+                <li><a href="perfiles.html">Estudiantes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="espacio"> </div>
+
+    <div class="slider">
+        <div id="img">
+            <img id="imgSlider" src="REDES1.png">
+        </div>
+
+    </div>
+
+    <script>
+        var img = document.getElementById('img');
+
+        var imagenes = ['REDES2.png', 'REDES3.png','REDES1.png'];
+
+        var x = 0;
+
+        function slide() {
+            if (x < imagenes.length) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+
+            img.innerHTML = "<img src=" + imagenes[x - 1] + ">";
+
+        }
+
+        setInterval(slide, 4000);
+    </script>
+
+
+    <section class="info">
+        <h1>
+            Redes de computadoras
+        </h1>
+
+        <p>
+            Nos encontramos en un momento decisivo respecto al uso de la tecnología para extender y
+			potenciar la red global. Internet se emplea más de lo que cualquiera hubiera imaginado, el
+			modo en que se producen las interacciones sociales, comerciales, políticas y personales
+			cambia en forma continua para estar al día con la evolución de esta globalización. Mientras
+			los desarrolladores empujan los límites de lo posible, las capacidades de las redes que
+			forman Internet tendrán una función cada vez más importante para el éxito de esos
+			proyectos. 
+        </p>
+        <h2>
+            RESULTADOS DEL APRENDIZAJE
+        </h2>
+
+        <p>
+			- La capacidad de aplicar conocimientos científicos y tecnológicos en la solución de
+			problemas en el área informática con un enfoque interdisciplinario. 
+		<P>
+			 - Aplicar normas, marcos de referencia, estándares de calidad y seguridad vigentes en
+			el ámbito del desarrollo y gestión de tecnologías y sistemas de información. 
+		<P>
+			- Crear y administrar redes de comunicación, que contemplen el diseño, selección,
+			instalación y mantenimiento para la operación de equipos de cómputo,
+			aprovechando los avances tecnológicos a su alcance. 
+        </p>
+    </section>
+    <div class="footer">
+
+    </div>
+
+
+
+
+</body>
+
+</html>
